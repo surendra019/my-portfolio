@@ -14,10 +14,10 @@ const Navbar = () => {
     <nav className="navbar">
     {/* <div className="logo">My Website</div> */}
     <div className={`nav-links ${isOpen ? 'open' : ''}`}>
-      <NavLink to="/">Home</NavLink>
-      <NavLink to="/about">About</NavLink>
-      <NavLink to="/work">Work</NavLink>
-      <NavLink to="/skills">Skills</NavLink>
+      <NavLink to="/" onClick={toggleMenu}>Home</NavLink>
+      <NavLink to="/about" onClick={toggleMenu}>About</NavLink>
+      <NavLink to="/work" onClick={toggleMenu}>Work</NavLink>
+      <NavLink to="/skills" onClick={toggleMenu}>Skills</NavLink>
     </div>
     <div className="hamburger" onClick={toggleMenu}>
       <span className="bar"></span>
