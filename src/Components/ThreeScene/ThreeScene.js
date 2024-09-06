@@ -77,7 +77,7 @@ const InfiniteStarsAnimation = () => {
             renderer.setSize(window.innerWidth, window.innerHeight);
         };
 
-        window.addEventListener('resize', handleResize);
+        // window.addEventListener('resize', handleResize);
 
 
 
