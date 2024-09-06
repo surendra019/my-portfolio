@@ -36,6 +36,8 @@ const Home = () => {
 
   return (
     <div className={styles.main}>
+      <MoonAndStarsAnimation/>
+   
       <section className={`${styles.section_home_outer} ${styles.section}`} id="home">
         <div className={styles.section_home_inner}>
           <div className={styles.intro_text}>
@@ -51,8 +53,7 @@ const Home = () => {
             <img src={process.env.PUBLIC_URL + "profile.jpg"} alt="profile" />
           </div>
         </div>
-        <MoonAndStarsAnimation/>
-   
+        
       </section>
       <div className={animation_styles.quote_container}>
         <div className={animation_styles.quote_container_inner}><span className={animation_styles.quote}></span></div>
