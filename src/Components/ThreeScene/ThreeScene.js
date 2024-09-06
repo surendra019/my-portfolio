@@ -1,7 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import * as THREE from 'three';
+import './ThreeScene.css'
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
-const ThreeScene = () => {
+const InfiniteStarsAnimation = () => {
   const mountRef = useRef(null);
 
   useEffect(() => {
@@ -15,21 +17,53 @@ const ThreeScene = () => {
     );
     const renderer = new THREE.WebGLRenderer({ antialias: true });
     renderer.setSize(window.innerWidth, window.innerHeight);
+    renderer.setClearColor(0x000000); // Black background
     mountRef.current.appendChild(renderer.domElement);
 
-    // Add a rotating cube
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
-    scene.add(cube);
+    // OrbitControls to allow rotating the scene
+    const controls = new OrbitControls(camera, renderer.domElement);
+    controls.enableDamping = true;
 
+    // Create a group to hold the stars
+    const starsGroup = new THREE.Group();
+    scene.add(starsGroup);
+
+    // Function to add stars
+    function addStar() {
+      const geometry = new THREE.SphereGeometry(0.1, 24, 24);
+      const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
+      const star = new THREE.Mesh(geometry, material);
+
+      // Set random position for each star
+      const [x, y, z] = Array(3)
+        .fill()
+        .map(() => THREE.MathUtils.randFloatSpread(200));
+
+      star.position.set(x, y, z);
+      starsGroup.add(star);
+    }
+
+    // Create a bunch of stars
+    Array(500).fill().forEach(addStar);
+
+    // Set the camera position
     camera.position.z = 5;
 
     // Animation loop
     const animate = () => {
       requestAnimationFrame(animate);
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+
+      // Move stars towards the camera to create the zoom-in effect
+      starsGroup.children.forEach((star) => {
+        star.position.z += 0.1; // Adjust speed by changing the value
+
+        // Reset star position when it passes the camera
+        if (star.position.z > camera.position.z) {
+          star.position.z = THREE.MathUtils.randFloat(-200, -100);
+        }
+      });
+
+      controls.update();
       renderer.render(scene, camera);
     };
 
@@ -47,11 +81,14 @@ const ThreeScene = () => {
     // Cleanup on unmount
     return () => {
       window.removeEventListener('resize', handleResize);
-      mountRef.current.removeChild(renderer.domElement);
+      if (mountRef.current){
+        mountRef.current.removeChild(renderer.domElement);
+      }
+
     };
   }, []);
 
-  return <div ref={mountRef} />;
+  return <div className='main-container' ref={mountRef} />;
 };
 
-export default ThreeScene;
+export default InfiniteStarsAnimation;

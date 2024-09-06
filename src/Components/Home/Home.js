@@ -3,7 +3,8 @@ import styles from './Home.module.css'; // Import your CSS file for styling
 import animation_styles from './Animations.module.css'
 import { useRef, useState } from 'react';
 import { useEffect } from 'react';
-import ThreeScene from '../ThreeScene/ThreeScene';
+
+import MoonAndStarsAnimation from '../ThreeScene/ThreeScene';
 
 const Home = () => {
   const words = ['Games', 'Websites', 'Apps', 'APIs', 'Backend for game']; // Define your words here
@@ -50,19 +51,8 @@ const Home = () => {
             <img src={process.env.PUBLIC_URL + "profile.jpg"} alt="profile" />
           </div>
         </div>
-        <ThreeScene/>
-        {/* <ul className={animation_styles.circles}>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-          <li></li>
-        </ul> */}
+        <MoonAndStarsAnimation/>
+   
       </section>
       <div className={animation_styles.quote_container}>
         <div className={animation_styles.quote_container_inner}><span className={animation_styles.quote}></span></div>
