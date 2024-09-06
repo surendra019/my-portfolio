@@ -5,7 +5,7 @@ import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 
 const InfiniteStarsAnimation = () => {
     const mountRef = useRef(null);
-    let ref;
+    // let ref;
 
     useEffect(() => {
         // Set up the scene, camera, and renderer
@@ -77,7 +77,7 @@ const InfiniteStarsAnimation = () => {
             renderer.setSize(window.innerWidth, window.innerHeight);
         };
 
-        // window.addEventListener('resize', handleResize);
+        window.addEventListener('resize', handleResize);
 
 
 
@@ -92,9 +92,7 @@ const InfiniteStarsAnimation = () => {
         };
     }, []);
 
-    useEffect(() => {
-        ref = mountRef.current;
-    })
+
 
     return <div className='main-container' ref={mountRef} />;
 };
