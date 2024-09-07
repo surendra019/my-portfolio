@@ -1,0 +1,15 @@
+[
+    {
+        "type": "game",
+        "title": "Hit the Goal",
+        "thumbnail": "htg-thumbnail.jpg",
+        "description": "it is a unique twist on the classic bubble shooter genre. In this 2D mobile game, player control a football at the bottom of the screen, aiming to launch it accurately towards a central circular goal while navigating a dynamic field of rotating and animated lines.",
+        "tags": [
+            "Godot",
+            "GDscript"
+        ],
+        "video": "htg.mp4",
+        "img1": "htg-img1.jpg",
+        "img2": "htg-img2.jpg"
+    }
+]

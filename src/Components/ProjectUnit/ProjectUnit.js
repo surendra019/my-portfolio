@@ -3,7 +3,7 @@ import './ProjectUnit.css'
 import ProjectModal from '../ProjectModal/ProjectModal';
 import { useState } from 'react';
 
-function ProjectUnit() {
+function ProjectUnit({ project }) {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const openModal = () => setIsModalOpen(true);
@@ -11,25 +11,25 @@ function ProjectUnit() {
 
   return (
     <>
-    <div className="project-card" onClick={openModal}>
-      <img src={process.env.PUBLIC_URL + "Celestial_Clash2.jpg"} alt={`Project`} className="project-image" />
-      <div className="project-content">
-        <h3 className="project-title">{"Title"}</h3>
-        <p className="project-description">{"description"}</p>
-        <div className="project-tags">
-          {/* {technologies.map((tech, index) => (
-            <span key={index} className={`tag ${tech.toLowerCase()}`}>
-              {tech}
-            </span>
-          ))} */}
-        <span key={1} className={`tag `}>
-              Godot
-            </span>
+      <div className="project-card" onClick={openModal}>
+        <img src={process.env.PUBLIC_URL + "Celestial_Clash2.jpg"} alt={`Project`} className="project-image" />
+        <div className="project-content">
+          <h3 className="project-title">{project.title}</h3>
+          <p className="project-description">{project.description.substr(0, 40) + "..."}</p>
+          <div className="project-tags">
+            {
+              project.tags.map(tag => {
+                return <span key={tag} className={`tag `}>
+                  {tag}
+                </span>
+              })
+            }
+
+          </div>
         </div>
+
       </div>
-   
-    </div>
-    <ProjectModal
+      <ProjectModal
         isOpen={isModalOpen}
         onClose={closeModal}
         image={"ds"}
@@ -39,7 +39,7 @@ function ProjectUnit() {
         link={"link"}
       />
     </>
-    
+
   )
 }
 

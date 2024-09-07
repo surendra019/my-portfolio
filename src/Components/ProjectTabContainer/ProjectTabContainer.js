@@ -3,11 +3,12 @@ import ProjectUnit from '../ProjectUnit/ProjectUnit';
 import './ProjectTabContainer.css';
 
 const ProjectTabContainer = ({ projects }) => {
-    const [activeTab, setActiveTab] = useState('Web Development');
+    const [activeTab, setActiveTab] = useState('web');
     const [selectedProject, setSelectedProject] = useState(null);
 
     const handleTabClick = (tab) => {
         setActiveTab(tab);
+        console.log(tab)
     };
 
     const handleCardClick = (project) => {
@@ -18,25 +19,38 @@ const ProjectTabContainer = ({ projects }) => {
         setSelectedProject(null);
     };
 
-    const filteredProjects = projects.filter(project => project.category === activeTab);
+    function filteredProjects(){
+        if (projects){
+            return projects.filter(project => project.type === activeTab);
+        }
+        return null
+    }
 
     return (
         <div className="tabs-with-projects">
             <div className="tabs " >
-                {['Web Development', 'Game Development', 'Android Development'].map((tab) => (
+                {['web', 'game', 'app'].map((tab) => (
                     <div
                         key={tab}
                         className={`tab ${activeTab === tab ? 'active' : ''}`}
                         onClick={() => handleTabClick(tab)}
                     >
-                        {tab}
+                        <div>{tab ==="web" ? "Web Development" : tab === "app" ? "App Development" : "Game Development"}</div>
+                        <img src={process.env.PUBLIC_URL +
+                                tab === "Android Development" ? "android app dev icon.png" : tab === "Web Development" ? "web dev icon.png" : "game dev icon.png"
+                            } />
+                   
                     </div>
                 ))}
-     
+
             </div>
             <div className="projects-grid">
-                <ProjectUnit/>
-                <ProjectUnit/>
+                {
+                    filteredProjects() !== null ?
+                    filteredProjects().map(project => {
+                        return <ProjectUnit key={project.title} project={project}/>
+                    }) : "djsfl"
+                }
             </div>
 
         </div>

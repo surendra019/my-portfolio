@@ -1,13 +1,18 @@
 @import url('../../index.css');
 
-.main-container{
+.main-container-about{
     background-color: var(--primary-color);
-    height: 100vh;
+    /* height: 100vh; */
+    height: 100%;
     display: flex;
-    align-items: center;
+    align-items: flex;
     justify-content: center;
-    overflow-y: auto;
+    /* position: relative; */
+
 }
+.text-container::-webkit-scrollbar {
+    display: none;
+  }
 
 .text-container{
     display: flex;
@@ -17,6 +22,7 @@
     overflow-wrap: break-word;
     word-break: break-all;
     margin-top: 100px;
+    overflow-y: auto;
 }
 
 @media screen and (max-width: 768px) {
