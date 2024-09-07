@@ -2,14 +2,32 @@
     {
         "type": "game",
         "title": "Hit the Goal",
-        "thumbnail": "htg-thumbnail.jpg",
         "description": "it is a unique twist on the classic bubble shooter genre. In this 2D mobile game, player control a football at the bottom of the screen, aiming to launch it accurately towards a central circular goal while navigating a dynamic field of rotating and animated lines.",
         "tags": [
             "Godot",
             "GDscript"
         ],
         "videos": ["htg.mp4"],
-        "images": ["htg-img1.jpg", "htg-img2.jpg"]
+        "images": ["htg-img1.jpg", "htg-img2.jpg"],
+        "github": "https://github.com/surendra019/hit-the-goal-android-game"
         
-    }
+    },
+    {
+        "type": "game",
+        "title": "Celestial Clash",
+        "description": "Celestial Clash is a thrilling 2D spaceship shooter where you battle waves of alien spacecraft. Pilot your advanced spaceship through intense space combat, using powerful abilities like multiple bullets, rapid-fire, and shields to outmaneuver your enemies. Defeated foes drop collectables such as enhanced abilities, score multipliers, and more, adding strategic depth and excitement to each encounter. The more enemies you defeat and the higher your score, the more fun you’ll have. With fast-paced action and a range of upgrades, Celestial Clash offers endless challenges and high-octane space battles for players looking to dominate the cosmos.",
+        "tags": [
+          "Godot",
+          "GDscript"
+        ],
+        "videos": [
+          "cc.mp4"
+        ],
+        "images": [
+          "cc-img1.jpg",
+          "cc-img2.jpg",
+          "cc-img3.jpg"
+        ],
+        "github": "https://github.com/surendra019/celestial-clash-android-game"
+      }
 ]

@@ -31,7 +31,7 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>×</button>
         <Carousel items={getResourceObjects()} project={project} />
-        {/* <img src={process.env.PUBLIC_URL + project.type.charAt(0).toUpperCase() + project.type.slice(1) + "/" + project.title + "/" +project.img1} alt={`${project.title} Project`} className="modal-image" /> */}
+     
         <h2 className="modal-title">{project.title}</h2>
         <p className="modal-description">{project.description}</p>
         <div className="modal-tags">
@@ -43,7 +43,9 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             })
           }
         </div>
-
+        <a href={project.github} className="github-button" target="_blank">
+        <i className="fab fa-github"></i> Visit GitHub Project
+    </a>
       </div>
     </div>
   );
