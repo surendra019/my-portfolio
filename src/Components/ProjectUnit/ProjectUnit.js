@@ -26,6 +26,7 @@ function ProjectUnit({ project }) {
             }
 
           </div>
+          <div className='project-status'>Status: <span className={project.status === 'complete'? 'project-status-span-complete': 'project-status-span-incomplete'}>{project.status}</span></div>
         </div>
 
       </div>

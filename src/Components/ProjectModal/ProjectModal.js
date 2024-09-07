@@ -43,9 +43,12 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
             })
           }
         </div>
-        <a href={project.github} className="github-button" target="_blank">
+        {project.github &&
+          <a href={project.github} className="github-button" target="_blank">
         <i className="fab fa-github"></i> Visit GitHub Project
     </a>
+        }
+        
       </div>
     </div>
   );

@@ -9,7 +9,8 @@
         ],
         "videos": ["htg.mp4"],
         "images": ["htg-img1.jpg", "htg-img2.jpg"],
-        "github": "https://github.com/surendra019/hit-the-goal-android-game"
+        "github": "https://github.com/surendra019/hit-the-goal-android-game",
+        "status": "complete"
         
     },
     {
@@ -28,6 +29,45 @@
           "cc-img2.jpg",
           "cc-img3.jpg"
         ],
-        "github": "https://github.com/surendra019/celestial-clash-android-game"
+        "github": "https://github.com/surendra019/celestial-clash-android-game",
+        "status": "complete"
+      },
+      {
+        "type": "game",
+        "title": "Clash of KG",
+        "description": "It is a strategy-based game inspired by Fire Emblem, offering an engaging offline mode where two teams, each with up to four characters, battle it out. With 11 unique characters and 6 elemental types, every character boasts distinct abilities and elemental weaknesses, adding depth to the gameplay. Movement is strategic, as characters navigate a grid-based battlefield with movement and attack ranges defined by their abilities. it challenges players to think critically and plan their moves to outsmart the opposing team and emerge victorious.",
+        "tags": [
+          "Godot",
+          "GDscript"
+        ],
+        "videos": [
+          "cokg.mp4"
+        ],
+        "images": [
+          "cokg-img1.jpg",
+          "cokg-img2.jpg",
+          "cokg-img3.jpg",
+          "cokg-img4.jpg"
+        ],
+        "status": "complete",
+        "github": "https://github.com/surendra019/clash-of-kg-android-game"
+      },
+      {
+        "type": "game",
+        "title": "Mindease",
+        "description": "It is a relaxing game designed to soothe your mind with three calming mini-games. Unwind with the coloring game, where you can fill in shapes with colors of your choice. Challenge your creativity with the puzzle game by connecting pieces to reveal beautiful images. Finally, enjoy the tactile experience of the sand game, where you remove sand to create shapes and arrange objects on the sand. It offers a peaceful escape, allowing you to de-stress and immerse yourself in soothing, enjoyable activities.",
+        "tags": [
+          "Godot",
+          "GDscript"
+        ],
+        "videos": [
+          "me.mp4"
+        ],
+        "images": [
+          "me-img1.jpg",
+          "me-img2.jpg",
+          "me-img3.jpg"
+        ],
+        "status": "complete"
       }
 ]
