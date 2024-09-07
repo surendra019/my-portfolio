@@ -8,8 +8,8 @@
             "Godot",
             "GDscript"
         ],
-        "video": "htg.mp4",
-        "img1": "htg-img1.jpg",
-        "img2": "htg-img2.jpg"
+        "videos": ["htg.mp4"],
+        "images": ["htg-img1.jpg", "htg-img2.jpg"]
+        
     }
 ]

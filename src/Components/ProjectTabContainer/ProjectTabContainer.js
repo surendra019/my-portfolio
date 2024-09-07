@@ -37,7 +37,7 @@ const ProjectTabContainer = ({ projects }) => {
                     >
                         <div>{tab ==="web" ? "Web Development" : tab === "app" ? "App Development" : "Game Development"}</div>
                         <img src={process.env.PUBLIC_URL +
-                                tab === "Android Development" ? "android app dev icon.png" : tab === "Web Development" ? "web dev icon.png" : "game dev icon.png"
+                                tab === "app" ? "android app dev icon.png" : tab === "web" ? "web dev icon.png" : "game dev icon.png"
                             } />
                    
                     </div>
