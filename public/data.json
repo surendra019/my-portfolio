@@ -15,7 +15,7 @@
     {
         "type": "game",
         "title": "Celestial Clash",
-        "description": "Celestial Clash is a thrilling 2D spaceship shooter where you battle waves of alien spacecraft. Pilot your advanced spaceship through intense space combat, using powerful abilities like multiple bullets, rapid-fire, and shields to outmaneuver your enemies. Defeated foes drop collectables such as enhanced abilities, score multipliers, and more, adding strategic depth and excitement to each encounter. The more enemies you defeat and the higher your score, the more fun you’ll have. With fast-paced action and a range of upgrades, Celestial Clash offers endless challenges and high-octane space battles for players looking to dominate the cosmos.",
+        "description": "Celestial Clash is a thrilling 2D spaceship shooter where you battle waves of alien spacecraft. Pilot your advanced spaceship through intense space combat, using powerful abilities like multiple bullets, rapid-fire, and shields to outmaneuver your enemies. ",
         "tags": [
           "Godot",
           "GDscript"

@@ -24,7 +24,7 @@
   
   img, video {
     max-width: 100%;
-    max-height: 400px; /* Adjust height as needed */
+    max-height: 300px; /* Adjust height as needed */
     object-fit: contain;
   }
   
