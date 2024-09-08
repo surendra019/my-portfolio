@@ -5,7 +5,8 @@
         "description": "it is a unique twist on the classic bubble shooter genre. In this 2D mobile game, player control a football at the bottom of the screen, aiming to launch it accurately towards a central circular goal while navigating a dynamic field of rotating and animated lines.",
         "tags": [
             "Godot",
-            "GDscript"
+            "GDscript",
+            "2D"
         ],
         "videos": ["htg.mp4"],
         "images": ["htg-img1.jpg", "htg-img2.jpg"],
@@ -19,7 +20,8 @@
         "description": "Celestial Clash is a thrilling 2D spaceship shooter where you battle waves of alien spacecraft. Pilot your advanced spaceship through intense space combat, using powerful abilities like multiple bullets, rapid-fire, and shields to outmaneuver your enemies. ",
         "tags": [
           "Godot",
-          "GDscript"
+          "GDscript",
+          "2D"
         ],
         "videos": [
           "cc.mp4"
@@ -35,10 +37,11 @@
       {
         "type": "game",
         "title": "Clash of KG",
-        "description": "It is a strategy-based game inspired by Fire Emblem, offering an engaging offline mode where two teams, each with up to four characters, battle it out. With 11 unique characters and 6 elemental types, every character boasts distinct abilities and elemental weaknesses, adding depth to the gameplay. Movement is strategic, as characters navigate a grid-based battlefield with movement and attack ranges defined by their abilities. it challenges players to think critically and plan their moves to outsmart the opposing team and emerge victorious.",
+        "description": "It is a strategy-based game inspired by Fire Emblem, offering an engaging offline mode where two teams, each with up to four characters, battle it out. With 11 unique characters and 6 elemental types, every character boasts distinct abilities and elemental weaknesses, adding depth to the gameplay. Movement is strategic, as characters navigate a grid-based battlefield with movement and attack ranges defined by their abilities.",
         "tags": [
           "Godot",
-          "GDscript"
+          "GDscript",
+          "2D"
         ],
         "videos": [
           "cokg.mp4"
@@ -55,10 +58,11 @@
       {
         "type": "game",
         "title": "Mindease",
-        "description": "It is a relaxing game designed to soothe your mind with three calming mini-games. Unwind with the coloring game, where you can fill in shapes with colors of your choice. Challenge your creativity with the puzzle game by connecting pieces to reveal beautiful images. Finally, enjoy the tactile experience of the sand game, where you remove sand to create shapes and arrange objects on the sand. It offers a peaceful escape, allowing you to de-stress and immerse yourself in soothing, enjoyable activities.",
+        "description": "It is a relaxing game designed to soothe your mind with three calming mini-games. Unwind with the coloring game, where you can fill in shapes with colors of your choice. Challenge your creativity with the puzzle game by connecting pieces to reveal beautiful images. Finally, enjoy the tactile experience of the sand game, where you remove sand to create shapes and arrange objects on the sand.",
         "tags": [
           "Godot",
-          "GDscript"
+          "GDscript",
+          "2D"
         ],
         "videos": [
           "me.mp4"
@@ -90,7 +94,7 @@
       {
         "type": "game",
         "title": "Pyramid Kings",
-        "description": "Pyramid Kings is a modern take on the classic Pyramid Solitaire game, set in the mystic world of ancient Egypt. Pair cards that add up to 13 to clear the pyramid and uncover hidden treasures. With beautifully designed cards, captivating Egyptian-themed backgrounds, and increasingly challenging puzzles, Pyramid Kings offers a strategic and immersive card game experience. Perfect for both quick sessions and long gameplay, this game will keep you entertained as you climb the ranks to become the ultimate Pyramid King. Download Pyramid Kings and start your journey to ancient glory today!",
+        "description": "Pyramid Kings is a modern take on the classic Pyramid Solitaire game, set in the mystic world of ancient Egypt. Pair cards that add up to 13 to clear the pyramid and uncover hidden treasures. With beautifully designed cards, captivating Egyptian-themed backgrounds, and increasingly challenging puzzles, Pyramid Kings offers a strategic and immersive card game experience.",
         "tags": [
           "Godot",
           "GDscript"
@@ -104,5 +108,65 @@
         ],
         "status": "complete",
         "github": "https://github.com/surendra019/pyramid-kings-android-game"
+      },
+      {
+        "type": "game",
+        "title": "Third Person Controller with Vehicle Interaction",
+        "description": "This prototype showcases a third-person controller developed in Godot, featuring seamless interaction between character movement and vehicle usage. The character can navigate the 3D environment on foot, with responsive controls for walking, running, and jumping. The player can get in and get out of the car.",
+        "tags": [
+          "Godot",
+          "GDscript",
+          "3D",
+          "Prototype"
+        ],
+        "videos": [],
+        "images": [
+          "img1.png",
+          "img2.png"
+       
+        ],
+        "status": "complete",
+        "github": "https://github.com/surendra019/third-person-controller-with-vehicle-interaction"
+      },
+      {
+        "type": "game",
+        "title": "Racing Corners",
+        "description": "Racing Corners is an exciting 2D car game featuring three unique minigames that test your driving skills. In the Rope Game, you must navigate tight turns by creating rope connections to pivots, mastering precision and timing. The second minigame is a Classic Traffic Racing challenge, where you dodge vehicles and race through busy streets. The third minigame, Obstacle Dodger, ramps up the action as you avoid and destroy obstacles by throwing them off the road. With its diverse gameplay and fast-paced action, Racing Corners offers a thrilling experience for car game enthusiasts.",
+        "tags": [
+          "Godot",
+          "GDscript",
+          "2D"
+        ],
+        "videos": [
+          "vid.mp4"
+        ],
+        "images": [
+          "img4.jpg",
+          "img1.jpg",
+          "img3.jpg",
+          "img5.jpg"
+        ],
+        "status": "complete",
+        "github": "https://github.com/surendra019/racing-corners-android-game"
+      },
+      {
+        "type": "game",
+        "title": "Word Wizard",
+        "description": "Word Wizard is a captivating word puzzle game created using Godot, designed to challenge and entertain word enthusiasts. In this game, players are presented with a set of letters and must guess and fill in the blanks to form meaningful words. With each level, the puzzles become more challenging, testing your vocabulary and problem-solving skills. But the fun doesn’t stop there! Players can also create their own custom levels and share them with friends through a QR code. Challenge your friends and see who the true Word Wizard is!",
+        "tags": [
+          "Godot",
+          "GDscript",
+          "2D"
+        ],
+        "videos": [
+          "vid.mp4"
+        ],
+        "images": [
+          "img2.jpg",
+          "img1.jpg",
+          "img3.jpg"
+        ],
+        "status": "complete",
+        "github": "https://github.com/surendra019/word-wizard-android-game"
       }
 ]

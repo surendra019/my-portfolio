@@ -7,6 +7,7 @@
 
 .tabs {
     width: 200px;
+    min-width: 200px;
     border-right: 1px solid #ccc;
     /* padding: 16px; */
     background-color: var(--tertiary-color);
@@ -57,7 +58,7 @@
 }
 
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 520px) {
     .tabs {
         flex-direction: row;
         justify-content: space-evenly;
