@@ -86,5 +86,23 @@
         ],
         "status": "complete",
         "github": "https://github.com/surendra019/TorchApp"
+      },
+      {
+        "type": "game",
+        "title": "Pyramid Kings",
+        "description": "Pyramid Kings is a modern take on the classic Pyramid Solitaire game, set in the mystic world of ancient Egypt. Pair cards that add up to 13 to clear the pyramid and uncover hidden treasures. With beautifully designed cards, captivating Egyptian-themed backgrounds, and increasingly challenging puzzles, Pyramid Kings offers a strategic and immersive card game experience. Perfect for both quick sessions and long gameplay, this game will keep you entertained as you climb the ranks to become the ultimate Pyramid King. Download Pyramid Kings and start your journey to ancient glory today!",
+        "tags": [
+          "Godot",
+          "GDscript"
+        ],
+        "videos": ["pk.mp4"],
+        "images": [
+          "pk-img1.jpg",
+          "pk-img2.jpg",
+          "pk-img3.jpg",
+          "pk-img4.jpg"
+        ],
+        "status": "complete",
+        "github": "https://github.com/surendra019/pyramid-kings-android-game"
       }
 ]
