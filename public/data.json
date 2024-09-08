@@ -69,5 +69,22 @@
           "me-img3.jpg"
         ],
         "status": "complete"
+      },
+      {
+        "type": "app",
+        "title": "iTorch",
+        "description": "Illuminate your surroundings with ease using our Torch app, developed with the powerful Godot engine and enhanced with a custom Android plugin. Whether you're searching for something in the dark, need a reliable light source on the go, or just want a quick way to brighten up your day, our Torch app is here to help.",
+        "tags": [
+          "Godot",
+          "GDscript",
+          "Java"
+        ],
+        "videos": [],
+        "images": [
+          "torch-img1.jpg",
+          "torch-img2.jpg"
+        ],
+        "status": "complete",
+        "github": "https://github.com/surendra019/TorchApp"
       }
 ]

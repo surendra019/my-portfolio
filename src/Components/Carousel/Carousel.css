@@ -1,6 +1,6 @@
 .carousel {
     position: relative;
-    width: 100%; /* Adjust width as needed */
+    width: 90%; /* Adjust width as needed */
     overflow: hidden;
     margin: auto;
   }

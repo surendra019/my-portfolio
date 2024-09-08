@@ -49,7 +49,7 @@ const ProjectTabContainer = ({ projects }) => {
                     filteredProjects() !== null ?
                     filteredProjects().map(project => {
                         return <ProjectUnit key={project.title} project={project}/>
-                    }) : "djsfl"
+                    }) : "[Loader]"
                 }
             </div>
 

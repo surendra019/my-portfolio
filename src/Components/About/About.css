@@ -16,7 +16,7 @@
 
 .text-container{
     display: flex;
-    font-size: 2em;
+    font-size: 1.5em;
     width: 70%;
     word-wrap: break-word;
     overflow-wrap: break-word;
