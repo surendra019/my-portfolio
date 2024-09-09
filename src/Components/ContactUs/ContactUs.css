@@ -1,0 +1,74 @@
+/* ContactUs.css */
+@import url('../../index.css');
+
+/* Style for the contact section */
+#contact {
+    padding: 50px 20px;
+    max-width: 1000px;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 10px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+
+}
+
+/* Section title */
+#contact h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 1.5em;
+}
+
+/* Form style */
+#contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* Label style */
+#contact form label {
+    margin-bottom: 5px;
+    font-size: .8em;
+}
+
+/* Input field styles */
+#contact form input[type="text"],
+#contact form input[type="email"],
+#contact form input[type="subject"],
+#contact form textarea {
+    max-height: 50px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Textarea specific styles */
+#contact form textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* Button style */
+#contact form button[type="submit"] {
+    padding: 10px 20px;
+    background-color: var(--quaternary-color);
+    font-size: 1em;
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover effect */
+#contact form button[type="submit"]:hover {
+    background-color: #0056b3;
+}

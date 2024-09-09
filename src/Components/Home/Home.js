@@ -3,8 +3,8 @@ import styles from './Home.module.css'; // Import your CSS file for styling
 import animation_styles from './Animations.module.css'
 import { useRef, useState } from 'react';
 import { useEffect } from 'react';
-
 import MoonAndStarsAnimation from '../ThreeScene/ThreeScene';
+import ContactForm from '../ContactUs/ContactUs';
 
 const Home = () => {
   const words = ['Games', 'Websites', 'Apps', 'APIs', 'Backend for game']; // Define your words here
@@ -56,7 +56,8 @@ const Home = () => {
         
       </section>
       <div className={animation_styles.quote_container}>
-        <div className={animation_styles.quote_container_inner}><span className={animation_styles.quote}></span></div>
+        <ContactForm/>
+        {/* <div className={animation_styles.quote_container_inner}><span className={animation_styles.quote}></span></div> */}
       </div>
 
     </div>
