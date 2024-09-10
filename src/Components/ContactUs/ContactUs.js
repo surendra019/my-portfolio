@@ -20,15 +20,12 @@ const ContactForm = () => {
     const handleSubmit = (e) => {
     e.preventDefault();
 
-    const emailData = {
-        ...formData,
-        from_email: formData.email,  // Ensure it matches what your template expects
-    };
+    
 
     emailjs.send(
         'service_vaf4joq',
         'template_0c2flg6',
-        emailData,
+        formData,
         'xvO-mOLH8pelFe0pL'
     ).then((result) => {
         console.log(result.text);
@@ -38,7 +35,7 @@ const ContactForm = () => {
 
     // Reset form
     setFormData({
-        from_name: '',
+        name: '',
         email: '',
         subject: '',
         message: ''
