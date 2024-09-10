@@ -4,7 +4,7 @@ import './ContactUs.css'
 
 const ContactForm = () => {
     const [formData, setFormData] = useState({
-        name: '',
+        from_name: '',
         email: '',
         subject: '',
         message: ''
@@ -38,7 +38,7 @@ const ContactForm = () => {
 
     // Reset form
     setFormData({
-        name: '',
+        from_name: '',
         email: '',
         subject: '',
         message: ''
