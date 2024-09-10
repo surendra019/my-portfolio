@@ -36,9 +36,10 @@ const Home = () => {
 
   return (
     <div className={styles.main}>
-      <MoonAndStarsAnimation/>
+     
    
       <section className={`${styles.section_home_outer} ${styles.section}`} id="home">
+      <MoonAndStarsAnimation/>
         <div className={styles.section_home_inner}>
           <div className={styles.intro_text}>
             <span>Hii,
