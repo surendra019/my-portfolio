@@ -18,27 +18,32 @@ const ContactForm = () => {
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault();
+    e.preventDefault();
 
-        emailjs.send(
-            'service_vaf4joq', // Replace with your EmailJS service ID
-            'template_0c2flg6', // Replace with your EmailJS template ID
-            formData,
-            'xvO-mOLH8pelFe0pL' // Replace with your EmailJS user ID
-        ).then((result) => {
-            console.log(result.text);
-        }, (error) => {
-            console.log(error.text);
-        });
-
-        // Reset form
-        setFormData({
-            name: '',
-            email: '',
-            subject: '',
-            message: ''
-        });
+    const emailData = {
+        ...formData,
+        from_email: formData.email,  // Ensure it matches what your template expects
     };
+
+    emailjs.send(
+        'service_vaf4joq',
+        'template_0c2flg6',
+        emailData,
+        'xvO-mOLH8pelFe0pL'
+    ).then((result) => {
+        console.log(result.text);
+    }, (error) => {
+        console.log(error.text);
+    });
+
+    // Reset form
+    setFormData({
+        name: '',
+        email: '',
+        subject: '',
+        message: ''
+    });
+};
 
     return (
         <section id="contact">
