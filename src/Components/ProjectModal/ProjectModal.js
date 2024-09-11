@@ -7,26 +7,32 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
 
 
   function getResourceObjects() {
-    
     let result = [];
-    project.images.forEach(element => {
-      let obj = {};
-      obj.src = element
-      obj.type = 'image'
-      result.push(obj)
-    });
-
-    project.videos.forEach(element => {
-      let obj = {};
-      obj.src = element
-      obj.type = 'video'
-      result.push(obj)
-    })
-
+  console.log(project)
+    if(project){
+      
+      project.images.forEach(element => {
+        let obj = {};
+        obj.src = element
+        obj.type = 'image'
+        result.push(obj)
+      });
+  
+      project.videos.forEach(element => {
+        let obj = {};
+        obj.src = element
+        obj.type = 'video'
+        result.push(obj)
+      })
+  
+      
+    }
     return result;
+   
   }
 
   return (
+    <> project ? 
     <div className="modal-overlay" onClick={onClose}>
       <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <button className="close-button" onClick={onClose}>×</button>
@@ -48,9 +54,16 @@ const ProjectModal = ({ isOpen, onClose, project }) => {
         <i className="fab fa-github"></i> Visit GitHub Project
     </a>
         }
+        {
+          project.visit &&
+          <a href={project.visit}>Visit</a>
+        }
         
       </div>
     </div>
+    : <div></div>
+    </>
+    
   );
 };
 

@@ -192,5 +192,43 @@
         ],
         "status": "complete",
         "github": "https://github.com/surendra019/parking-3d"
+      },
+      {
+        "type": "game",
+        "title": "Speciesvania",
+        "description": "In Speciesvania, step into a thrilling platformer adventure where various species have fallen under a witch's curse, turning them into fierce enemies. As the player, you must fight these cursed creatures, each with unique abilities. Defeat them in battle, and they will drop special ability bubbles. Collect and equip these bubbles to gain new powers, helping you take on stronger enemies and navigate through challenging levels. With fast-paced combat and strategic ability use, this game offers an exciting blend of action and discovery as you work to break the curse and restore peace.",
+        "tags": [
+          "Godot",
+          "GDscript",
+          "2D"
+        ],
+        "videos": [],
+        "images": [
+          "img1.png",
+          "img2.png",
+          "img3.png",
+          "img4.png"
+        ],
+        "status": "complete"
+      },
+      {
+        "type": "web",
+        "title": "Slot Machine",
+        "description": "It is slot machine game, built using PixiJS for a smooth and immersive experience! Spin the reels and enjoy vibrant graphics, dynamic animations, and exciting sound effects. With a variety of symbols and endless possibilities, each spin brings a new chance to win big. Whether you're a casual player or a slots enthusiast, our game provides entertainment that's fun and easy to play. The game is optimized for all devices, offering seamless gameplay across desktop and mobile. Try your luck and see if you can hit the jackpot today!",
+        "tags": [
+          "HTML",
+          "CSS",
+          "Javascript",
+          "Nodejs",
+          "Pixijs"
+        ],
+        "videos": [
+          "vid.mp4"
+        ],
+        "images": [
+          "img1.png",
+          "img2.png"
+        ],
+        "status": "complete"
       }
 ]
