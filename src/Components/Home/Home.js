@@ -5,6 +5,7 @@ import { useRef, useState } from 'react';
 import { useEffect } from 'react';
 import MoonAndStarsAnimation from '../ThreeScene/ThreeScene';
 import ContactForm from '../ContactUs/ContactUs';
+import './Home.css'
 
 const Home = () => {
   const words = ['Games', 'Websites', 'Apps', 'APIs', 'Backend for game']; // Define your words here
@@ -56,6 +57,12 @@ const Home = () => {
         </div>
         
       </section>
+      <div className={styles.social_container}>
+      <i className="fab fa-github "></i>
+      <i className="fab fa-instagram"></i>
+      <i className="fab fa-youtube "></i>
+      <i className="fab fa-linkedin"></i>
+      </div>
       <div className={animation_styles.quote_container}>
         <ContactForm/>
         {/* <div className={animation_styles.quote_container_inner}><span className={animation_styles.quote}></span></div> */}
