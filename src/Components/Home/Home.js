@@ -51,7 +51,7 @@ const Home = () => {
             </span>
           </div>
           <div className={`${styles.profile_image} ${styles.center_children}`}>
-            <img src={process.env.PUBLIC_URL + "profile.jpg"} alt="profile" />
+            {/* <img src={process.env.PUBLIC_URL + "profile.jpg"} alt="profile" /> */}
           </div>
         </div>
         
