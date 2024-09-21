@@ -58,10 +58,10 @@ const Home = () => {
         
       </section>
       <div className={styles.social_container}>
-      <i className="fab fa-github "></i>
-      <i className="fab fa-instagram"></i>
-      <i className="fab fa-youtube "></i>
-      <i className="fab fa-linkedin"></i>
+      <a href="https://github.com/surendra019"><i className="fab fa-github"></i></a>
+      {/* <a href=""></a><i className="fab fa-instagram"></i> */}
+      <a href="https://www.youtube.com/@gamewalabhai01"></a><i className="fab fa-youtube "></i>
+      <a href="https://www.linkedin.com/in/surendra951/"></a><i className="fab fa-linkedin"></i>
       </div>
       <div className={animation_styles.quote_container}>
         <ContactForm/>
