@@ -6,6 +6,7 @@ import { useEffect } from 'react';
 import MoonAndStarsAnimation from '../ThreeScene/ThreeScene';
 import ContactForm from '../ContactUs/ContactUs';
 import './Home.css'
+import TopProjects from '../TopProjects/TopProjects';
 
 const Home = () => {
   const words = ['Games', 'Websites', 'Apps', 'APIs', 'Backend for game']; // Define your words here
@@ -54,14 +55,15 @@ const Home = () => {
           <div className={`${styles.profile_image} ${styles.center_children}`}>
             {/* <img src={process.env.PUBLIC_URL + "profile.jpg"} alt="profile" /> */}
           </div>
+          <TopProjects/>
         </div>
         
       </section>
       <div className={styles.social_container}>
       <a href="https://github.com/surendra019"><i className="fab fa-github"></i></a>
       {/* <a href=""></a><i className="fab fa-instagram"></i> */}
-      <a href="https://www.youtube.com/@gamewalabhai01"></a><i className="fab fa-youtube "></i>
-      <a href="https://www.linkedin.com/in/surendra951/"></a><i className="fab fa-linkedin"></i>
+      <a href="https://www.youtube.com/@surendrasa951"><i className="fab fa-youtube "></i></a>
+      <a href="https://www.linkedin.com/in/surendra951/"><i className="fab fa-linkedin"></i></a>
       </div>
       <div className={animation_styles.quote_container}>
         <ContactForm/>

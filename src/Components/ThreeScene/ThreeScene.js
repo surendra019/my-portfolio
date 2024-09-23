@@ -12,13 +12,14 @@ const InfiniteStarsAnimation = () => {
         const scene = new THREE.Scene();
         const camera = new THREE.PerspectiveCamera(
             75,
-            window.innerWidth / window.innerHeight,
+            window.innerWidth / window.innerHeight * 4,
             0.1,
             1000
         );
         const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight);
+        renderer.setSize(window.innerWidth, window.innerHeight * 4);
         renderer.setClearColor(0x000000); // Black background
+        
         mountRef.current.appendChild(renderer.domElement);
 
         // OrbitControls to allow rotating the scene
@@ -70,15 +71,15 @@ const InfiniteStarsAnimation = () => {
 
         animate();
 
-        // Handle window resize
         const handleResize = () => {
-            camera.aspect = window.innerWidth / window.innerHeight;
+            const width = mountRef.current.clientWidth;
+            const height = mountRef.current.clientHeight;
+            renderer.setSize(width, height * 8);
+            camera.aspect = width / height * 6;
             camera.updateProjectionMatrix();
-            renderer.setSize(window.innerWidth, window.innerHeight);
         };
 
         window.addEventListener('resize', handleResize);
-
 
 
 

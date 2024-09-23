@@ -2,6 +2,11 @@
     font-size: 3em;
     margin: 10px 0px;
     text-align: center;
+    color: white;
+}
+
+.fab:visited{
+    color: white;
 }
 
 

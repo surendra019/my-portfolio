@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import ProjectUnit from '../ProjectUnit/ProjectUnit';
 import './ProjectTabContainer.css';
+import Loader from '../Loader/Loader';
 
 const ProjectTabContainer = ({ projects }) => {
     const [activeTab, setActiveTab] = useState('web');
@@ -49,7 +50,7 @@ const ProjectTabContainer = ({ projects }) => {
                     filteredProjects() !== null ?
                     filteredProjects().map(project => {
                         return <ProjectUnit key={project.title} project={project}/>
-                    }) : "[Loader]"
+                    }) : <Loader/>
                 }
             </div>
 

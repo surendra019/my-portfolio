@@ -72,3 +72,10 @@
 #contact form button[type="submit"]:hover {
     background-color: #0056b3;
 }
+
+
+button[type="submit"]{
+    width: 100px;
+    min-width: 100px;
+    margin: auto;
+}

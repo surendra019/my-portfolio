@@ -18,11 +18,9 @@
     display: flex;
     font-size: 1.5em;
     width: 70%;
-    word-wrap: break-word;
-    overflow-wrap: break-word;
-    word-break: break-all;
     margin-top: 100px;
     overflow-y: auto;
+    text-align: center;
 }
 
 @media screen and (max-width: 768px) {
