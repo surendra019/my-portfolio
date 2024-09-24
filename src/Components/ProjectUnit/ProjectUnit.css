@@ -1,7 +1,11 @@
+
+@import url('../../index.css');
+
 .project-card {
     background-color: #1c1c1c;
     border-radius: 8px;
     overflow: hidden;
+    font-family: var(--primary-font);
     /* width: 300px; */
     margin: 20px;
     width: 250px;
