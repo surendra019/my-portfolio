@@ -47,6 +47,9 @@ h2 {
     justify-content: start;
 }
 
+.project-contentt p{
+    font-weight: 500;
+}
 h3 {
     margin: 10px 0;
     font-size: 1.5rem;
