@@ -8,92 +8,68 @@ const InfiniteStarsAnimation = () => {
     // let ref;
 
     useEffect(() => {
-        // Set up the scene, camera, and renderer
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(
-            75,
-            window.innerWidth / window.innerHeight * 4,
-            0.1,
-            1000
-        );
+        const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
         const renderer = new THREE.WebGLRenderer({ antialias: true });
-        renderer.setSize(window.innerWidth, window.innerHeight * 4);
-        renderer.setClearColor(0x000000); // Black background
+        renderer.setSize(window.innerWidth, window.innerHeight );
+        renderer.setPixelRatio(window.devicePixelRatio);
+        renderer.setClearColor(0x000000);
         
         mountRef.current.appendChild(renderer.domElement);
-
-        // OrbitControls to allow rotating the scene
+    
         const controls = new OrbitControls(camera, renderer.domElement);
         controls.enableDamping = true;
-
-        // Create a group to hold the stars
+    
         const starsGroup = new THREE.Group();
         scene.add(starsGroup);
-
-        // Function to add stars
+    
         function addStar() {
             const geometry = new THREE.SphereGeometry(0.1, 24, 24);
             const material = new THREE.MeshBasicMaterial({ color: 0xffffff });
             const star = new THREE.Mesh(geometry, material);
-
-            // Set random position for each star
-            const [x, y, z] = Array(3)
-                .fill()
-                .map(() => THREE.MathUtils.randFloatSpread(200));
-
+    
+            const [x, y, z] = Array(3).fill().map(() => THREE.MathUtils.randFloatSpread(200));
             star.position.set(x, y, z);
             starsGroup.add(star);
         }
-
-        // Create a bunch of stars
+    
         Array(500).fill().forEach(addStar);
-
-        // Set the camera position
         camera.position.z = 5;
-
-        // Animation loop
+    
         const animate = () => {
             requestAnimationFrame(animate);
-
-            // Move stars towards the camera to create the zoom-in effect
+    
             starsGroup.children.forEach((star) => {
-                star.position.z += 0.1; // Adjust speed by changing the value
-
-                // Reset star position when it passes the camera
+                star.position.z += 0.1;
+    
                 if (star.position.z > camera.position.z) {
                     star.position.z = THREE.MathUtils.randFloat(-200, -100);
                 }
             });
-
+    
             controls.update();
             renderer.render(scene, camera);
         };
-
+    
         animate();
-
+    
         const handleResize = () => {
-            const width = mountRef.current.clientWidth;
-            const height = mountRef.current.clientHeight;
-            renderer.setSize(width, height * 8);
-            camera.aspect = width / height * 6;
+            const width = window.innerWidth;
+            const height = window.innerHeight;
+            renderer.setSize(width, height);
+            camera.aspect = width / height;
             camera.updateProjectionMatrix();
         };
-
+    
         window.addEventListener('resize', handleResize);
-
-
-
-        // Cleanup on unmount
+    
         return () => {
             window.removeEventListener('resize', handleResize);
             if (mountRef.current) {
                 mountRef.current.removeChild(renderer.domElement);
             }
-
         };
-    }, []);
-
-
+    }, [])
 
     return <div className='main-container' ref={mountRef} />;
 };
