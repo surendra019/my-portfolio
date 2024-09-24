@@ -13,6 +13,7 @@
         "github": "https://github.com/surendra019/hit-the-goal-android-game",
         "status": "complete"
         
+        
     },
     {
         "type": "game",
@@ -53,7 +54,8 @@
           "cokg-img4.jpg"
         ],
         "status": "complete",
-        "github": "https://github.com/surendra019/clash-of-kg-android-game"
+        "github": "https://github.com/surendra019/clash-of-kg-android-game",
+        "top": "1"
       },
       {
         "type": "game",
@@ -72,7 +74,8 @@
           "me-img2.jpg",
           "me-img3.jpg"
         ],
-        "status": "complete"
+        "status": "complete",
+        "top": "1"
       },
       {
         "type": "app",
@@ -167,7 +170,8 @@
           "img3.jpg"
         ],
         "status": "complete",
-        "github": "https://github.com/surendra019/word-wizard-android-game"
+        "github": "https://github.com/surendra019/word-wizard-android-game",
+        "top": "1"
       },
       {
         "type": "game",
