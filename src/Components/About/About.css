@@ -1,38 +1,28 @@
 @import url('../../index.css');
 
-.main-container-about{
+.main-container-about {
     background-color: var(--primary-color);
-    /* height: 100vh; */
-    height: 100%;
+    height: fit-content;
     display: flex;
-    align-items: flex;
+    flex-direction: column;
     justify-content: center;
-    /* position: relative; */
+    font-family: var(--primary-font);
+    overflow-y: auto;
+    margin-top: 60px;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 60px;
 
 }
-.text-container::-webkit-scrollbar {
-    display: none;
-  }
 
-.text-container{
-    display: flex;
-    font-size: 1.5em;
+.content {
     width: 70%;
-    margin-top: 100px;
-    overflow-y: auto;
     text-align: center;
+    margin-top: 50px;
 }
 
 @media screen and (max-width: 768px) {
-    .text-container{
-        font-size: 1.4em;
-        width: 80%;
-    }
-}
-
-@media screen and (max-width: 410px){
-    .text-container{
+    .content{
         width: 90%;
-        font-size: 1em;
     }
 }
